@@ -82,10 +82,10 @@ class Match extends React.Component {
             }
 
             if (match.score1 > match.score2) {
-                if (!club.wins) {
-                    club.wins = 1;
+                if (!club.won) {
+                    club.won = 1;
                 } else {
-                    club.wins += 1;
+                    club.won += 1;
                 }
             } else if (match.score1 === match.score2) {
                 if (!club.ties) {
